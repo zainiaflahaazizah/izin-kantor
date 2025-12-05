@@ -713,7 +713,7 @@
         <div class="container">
           <div class="page-inner">
             <div class="page-header">
-              <h3 class="fw-bold mb-3">DataTables.Net</h3>
+              <h3 class="fw-bold mb-3">Tabel Izin Anggota</h3>
               <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                   <a href="#">
@@ -739,120 +739,31 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="d-flex align-items-center">
-                      <h4 class="card-title">Add Row</h4>
-                      <button
-                        class="btn btn-primary btn-round ms-auto"
+                        <h4 class="card-title">Tabel Izin</h4>
+                        <button class="btn btn-primary btn-round ms-auto"
                         data-bs-toggle="modal"
-                        data-bs-target="#addRowModal"
-                      >
+                        data-bs-target="#addRowModal">
                         <i class="fa fa-plus"></i>
-                        Add Row
-                      </button>
+                        Tambah Izin
+                        </button>
                     </div>
                   </div>
                   <div class="card-body">
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="addRowModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header border-0">
-                            <h5 class="modal-title">
-                              <span class="fw-mediumbold"> New</span>
-                              <span class="fw-light"> Row </span>
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <p class="small">
-                              Create a new row using this form, make sure you
-                              fill them all
-                            </p>
-                            <form>
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <div class="form-group form-group-default">
-                                    <label>Name</label>
-                                    <input
-                                      id="addName"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="fill name"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-md-6 pe-0">
-                                  <div class="form-group form-group-default">
-                                    <label>Position</label>
-                                    <input
-                                      id="addPosition"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="fill position"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group form-group-default">
-                                    <label>Office</label>
-                                    <input
-                                      id="addOffice"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="fill office"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer border-0">
-                            <button
-                              type="button"
-                              id="addRowButton"
-                              class="btn btn-primary"
-                            >
-                              Add
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-danger"
-                              data-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                     <div class="table-responsive">
                       <table
-                        id="add-row"
-                        class="display table table-striped table-hover"
-                      >
+                        id="basic-datatables"
+                        class="display table table-striped table-hover">
                         <thead>
                           <tr>
                             <th>Nama</th>
                             <th>NIP</th>
-                            <th>Jabatan/Unit Kerja</th>
-                            <th>Alasan Keluar</th>
-                            <th>Jam keluar</th>
-                            <th>Jam Kembali</th>
-                            <th>Keterangan</th>
-                            <th>Tujuan Persetujuan</th>
+                            <th>NIP BPS</th>
+                            <th>Jabatan</th>
+                            <th>Wilayah</th>
+                            <th>Status</th>
+                            <th>Pendidikan</th>
+                            <th>Tempat Lahir</th>
+                            <th>Tanggal Lahir</th>
                             <th style="width: 10%">Action</th>
                           </tr>
                         </thead>
@@ -860,25 +771,27 @@
                           <tr>
                             <th>Nama</th>
                             <th>NIP</th>
-                            <th>Jabatan/Unit Kerja</th>
-                            <th>Alasan Keluar</th>
-                            <th>Jam keluar</th>
-                            <th>Jam Kembali</th>
-                            <th>Keterangan</th>
-                            <th>Tujuan Persetujuan</th>
+                            <th>NIP BPS</th>
+                            <th>Jabatan</th>
+                            <th>Wilayah</th>
+                            <th>Status</th>
+                            <th>Pendidikan</th>
+                            <th>Tempat Lahir</th>
+                            <th>Tanggal Lahir</th>
                             <th style="width: 10%">Action</th>
                           </tr>
                         </tfoot>
                         <tbody>
                           <tr>
-                            <td>Tiger Nixon</td>
-                            <td>123456789</td>
-                            <td>Anggota</td>
-                            <td>Pribadi</td>
-                            <td>07.30</td>
-                            <td>12.00</td>
-                            <td>Sakit</td>
-                            <td>Kepala BPS</td>
+                            <td>Eddy Erwan Nopianoor, S.Si, MP</td>
+                            <td>197311251994121001</td>
+                            <td>340015040</td>
+                            <td>Statistisi Ahli Madya BPS Kabupaten/Kota</td>
+                            <td>Kab. Banjar</td>
+                            <td>PNS</td>
+                            <td>S-2 Ekonomi Pertanian</td>
+                            <td>Banjar</td>
+                            <td>25-11-1973</td>
                             <td>
                               <div class="form-button-action">
                                 <button
@@ -903,46 +816,48 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>Garrett Winters</td>
-                            <td>123456789</td>
-                            <td>Ketua Tim</td>
-                            <td>Dinas</td>
-                            <td>07.30</td>
-                            <td>14.00</td>
-                            <td>Perjalanan Dinas</td>
-                            <td>Kepala BPS</td>
-                            <td>
-                              <div class="form-button-action">
-                                <button
-                                  type="button"
-                                  data-bs-toggle="tooltip"
-                                  title=""
-                                  class="btn btn-link btn-primary btn-lg"
-                                  data-original-title="Edit Task"
-                                >
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button
-                                  type="button"
-                                  data-bs-toggle="tooltip"
-                                  title=""
-                                  class="btn btn-link btn-danger"
-                                  data-original-title="Remove"
-                                >
-                                  <i class="fa fa-times"></i>
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Airi Satou</td>
-                            <td>123456789</td>
-                            <td>Ketua Tim</td>
-                            <td>Dinas</td>
-                            <td>07.30</td>
-                            <td>14.00</td>
-                            <td>Perjalanan Dinas</td>
+                            <td>Badal Imamuddin, SST</td>
+                            <td>199205082014101001</td>
+                            <td>340056798</td>
                             <td>Kepala Subbagian Umum</td>
+                            <td>Kab. Banjar</td>
+                            <td>PNS</td>
+                            <td>D-IV Statistik Ekonomi</td>
+                            <td>Sumbawa</td>
+                            <td>08-05-1992</td>
+                            <td>
+                              <div class="form-button-action">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="tooltip"
+                                  title=""
+                                  class="btn btn-link btn-primary btn-lg"
+                                  data-original-title="Edit Task"
+                                >
+                                  <i class="fa fa-edit"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  data-bs-toggle="tooltip"
+                                  title=""
+                                  class="btn btn-link btn-danger"
+                                  data-original-title="Remove"
+                                >
+                                  <i class="fa fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Deisy Andriani, SST</td>
+                            <td>198202222004122001</td>
+                            <td>340017353</td>
+                            <td>Analis Pengelolaan Keuangan APBN Ahli Muda Subbagian Umum</td>
+                            <td>Kab. Banjar</td>
+                            <td>PNS</td>
+                            <td>D-IV Statistik Sosial Kependudukan</td>
+                            <td>Negara</td>
+                            <td>22-02-1982</td>
                             <td>
                               <div class="form-button-action">
                                 <button
@@ -972,6 +887,8 @@
                   </div>
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -1272,3 +1189,4 @@
     </script>
   </body>
 </html>
+
