@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -23,24 +27,41 @@ Route::get('/home', function () {
 });
 
 
-//FORM IZIN//
-Route::get('/form-izin', function () {
-        return view('form-izin');
+// //FORM IZIN//
+Route::get('/formizin', function () {
+        return view('formizin');
 });
-Route::get('/tabel-izin', function () {
-    return view('tabel-izin');
+// Route::get('/tabel-izin', function () {
+//     return view('tabel-izin');
+// });
+// Route::get('/form-izin-2', function () {
+//     return view('anggota.form-izin-2');
+// });
+
+Route::get('/form-izin-index', function () {
+        return view('form-izin.index');
 });
-Route::get('/form-izin-2', function () {
-    return view('anggota.form-izin-2');
+Route::get('/form-izin-create', function () {
+        return view('form-izin.create');
+});
+Route::get('/form-izin-edit', function () {
+        return view('form-izin.edit');
+});
+Route::get('/form-izin-show', function () {
+        return view('form-izin.show ');
 });
 
 
 //FORM DIKUMENTASI//
-Route::get('/form-dokumentasi', function () {
-        return view('anggota.form-dokumentasi');
-});
-Route::get('/form-doc', function () {
-    return view('anggota.form-doc');
+// Route::get('/form-dokumentasi', function () {
+//         return view('anggota.form-dokumentasi');
+// });
+// Route::get('/form-doc', function () {
+//     return view('anggota.form-doc');
+// });
+
+Route::get('/form-dokumentasi-index', function () {
+        return view('form-dokumentasi.index');
 });
 
 
@@ -51,8 +72,20 @@ Route::get('/approval', function () {
 
 
 //PEGAWAI//
-Route::get('/index-pegawai', function () {
+// Route::get('/index-pegawai', function () {
+//         return view('pegawai.index');
+// });
+Route::get('/pegawai-index', function () {
         return view('pegawai.index');
+});
+Route::get('/pegawai-create', function () {
+        return view('pegawai.create');
+});
+Route::get('/pegawai-edit', function () {
+        return view('pegawai.edit');
+});
+Route::get('/pegawai-show', function () {
+        return view('pegawai.show');
 });
 
 
